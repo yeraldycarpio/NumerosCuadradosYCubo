@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="NumerosCuadradosYCubo.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+
+            <Image 
+                Source="cubo.jpg"
+                SemanticProperties.Description="Cute dot net bot waving hi to you!"
+                HeightRequest="200"
+                HorizontalOptions="Center"/>
+
+            <Label
+               TextColor="HotPink"
+                SemanticProperties.HeadingLevel="Level1"
+                FontSize="32"
+                HorizontalOptions="Center" 
+                FontFamily=""/>
+
+            <Label
+                Text="Números cuadrado, cubo"
+                SemanticProperties.HeadingLevel="Level2"
+                FontSize="40"
+                HorizontalOptions="Center" 
+                FontFamily="" />
+
+            <Entry Placeholder="Ingrese el numero" x:Name="numer1"  FontFamily="" FontAttributes="Italic"/>
+            <Entry Placeholder="Numero elevado al cubo" x:Name="cubo"  FontFamily="" FontAttributes="Italic"/>
+            <Entry Placeholder="Ingrese al cuadrado" x:Name="cuadrado"  FontFamily="" FontAttributes="Italic"/>
+            <Button Text="Calcular" x:Name="Calcular" Clicked="Calcular_Clicked" FontFamily="" FontAttributes="Italic" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+
+
+</ContentPage>
